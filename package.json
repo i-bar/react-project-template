@@ -35,7 +35,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "CI=true npm test"
+      "pre-push": "git stash CI=true npm test",
+      "post-push": "git stash pop"
     }
   }
 }
