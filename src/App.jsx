@@ -1,13 +1,12 @@
 import React from 'react';
 import './App.css';
-
-let b = 'test';
+import ComponentTemplate from './components/componentTemplate/ComponentTemplate';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>React App Template</p>
+        <ComponentTemplate />
       </header>
     </div>
   );
