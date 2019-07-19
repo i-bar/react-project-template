@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import ComponentTemplate from './components/componentTemplate/ComponentTemplate';
 
 function App() {
   return (

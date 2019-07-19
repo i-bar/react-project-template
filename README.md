@@ -1,6 +1,10 @@
 # React Project Template
 
-##
+## Git pair
+
+## Git commit message
+
+## Git good practices
 
 Search for the word "template" and rename to your project name.
 
