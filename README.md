@@ -2,7 +2,7 @@
 
 This project was created with create-react-app. The following enhancements were added:
 
-- Eslint and Prettier formatter
+- Added Eslint and Prettier formatter
 - Added pre- and post-push hooks to run the unit tests.
   1. Save the local changes to a stash named `pre-push-stash`.
   2. Run the test. `CI=true` so that it runs all tests without requiring any user input.
@@ -10,7 +10,6 @@ This project was created with create-react-app. The following enhancements were 
   4. If the tests pass, the `post-push` hook is executed and the stash named `pre-push-stash` is popped.
 
 ```
-in package.json:
   "hooks": {
       "pre-push": "git stash save pre-push-stash && CI=true npm test || (git stash pop $(git stash list | grep pre-push-stash | cut -d: -f1) && exit 1) ",
       "post-push": "git stash pop $(git stash list | grep pre-push-stash | cut -d: -f1)"
@@ -37,3 +36,8 @@ in package.json:
 
 - Use [git pair](https://github.com/spinningarrow/git-pair) for commit message authors.
 - Git commit message should have the following format "[#42] Commit message", where #42 is the card number associated to this commit.
+- Steps to be taken every morning :)
+  - `git pull -r`
+  - `npm test`
+  - code + `git commit` often :)
+  - `git push` at least once a day
